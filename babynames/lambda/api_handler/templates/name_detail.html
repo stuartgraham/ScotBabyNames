@@ -1,0 +1,20 @@
+{% extends '_base.html' %}
+
+{% block title%}Names{% endblock %}
+
+{% block content %}
+
+{% if 'B' in page_data['name_data'] %}
+    <h3>Boy</h3>
+    {{ page_data['name_data']['B']['name'] }}<br>
+    2019: {{ page_data['name_data']['B']['2019']['counted'] }} ({{ page_data['name_data']['B']['2019']['pos'] }}th)
+    <br><br>
+{% endif %}
+{% if 'G' in page_data['name_data'] %}
+    <h3>Girl</h3>
+    {{ page_data['name_data']['G']['name'] }}<br>
+    2019: {{ page_data['name_data']['G']['2019']['counted'] }} ({{ page_data['name_data']['G']['2019']['pos'] }}th)
+    <br><br>
+{% endif %}
+
+{% endblock %}
