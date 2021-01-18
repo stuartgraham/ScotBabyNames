@@ -5,15 +5,33 @@
 {% block content %}
 
 {% if 'B' in page_data['name_data'] %}
-    <h3>Boy</h3>
+    <h3>{{ page_data['name_data']['B']['name'] }} (Boy)</h3>
     {{ page_data['name_data']['B']['name'] }}<br>
-    2019: {{ page_data['name_data']['B']['2019']['counted'] }} ({{ page_data['name_data']['B']['2019']['pos'] }}th)
+    {% if '2019' in page_data['name_data']['B'] %}
+    2019: {{ page_data['name_data']['B']['2019']['counted'] }} ({{ page_data['name_data']['B']['2019']['pos'] }}th)<br>
+    {% if '2018' in page_data['name_data']['B'] %}
+    2018: {{ page_data['name_data']['B']['2018']['counted'] }} ({{ page_data['name_data']['B']['2018']['pos'] }}th)<br>
+    {% if '2017' in page_data['name_data']['B'] %}
+    2017: {{ page_data['name_data']['B']['2017']['counted'] }} ({{ page_data['name_data']['B']['2017']['pos'] }}th)<br>
+    {% if '2016' in page_data['name_data']['B'] %}
+    2016: {{ page_data['name_data']['B']['2016']['counted'] }} ({{ page_data['name_data']['B']['2016']['pos'] }}th)<br>
+    {% if '2015' in page_data['name_data']['B'] %}
+    2015: {{ page_data['name_data']['B']['2015']['counted'] }} ({{ page_data['name_data']['B']['2015']['pos'] }}th)<br>
     <br><br>
 {% endif %}
 {% if 'G' in page_data['name_data'] %}
-    <h3>Girl</h3>
+    <h3>{{ page_data['name_data']['G']['name'] }} (Girl)</h3>
     {{ page_data['name_data']['G']['name'] }}<br>
-    2019: {{ page_data['name_data']['G']['2019']['counted'] }} ({{ page_data['name_data']['G']['2019']['pos'] }}th)
+    {% if '2019' in page_data['name_data']['G'] %}
+    2019: {{ page_data['name_data']['G']['2019']['counted'] }} ({{ page_data['name_data']['G']['2019']['pos'] }}th)<br>
+    {% if '2018' in page_data['name_data']['G'] %}
+    2018: {{ page_data['name_data']['G']['2018']['counted'] }} ({{ page_data['name_data']['G']['2018']['pos'] }}th)<br>
+    {% if '2017' in page_data['name_data']['G'] %}
+    2017: {{ page_data['name_data']['G']['2017']['counted'] }} ({{ page_data['name_data']['G']['2017']['pos'] }}th)<br>
+    {% if '2016' in page_data['name_data']['G'] %}
+    2016: {{ page_data['name_data']['G']['2016']['counted'] }} ({{ page_data['name_data']['G']['2016']['pos'] }}th)<br>
+    {% if '2015' in page_data['name_data']['G'] %}
+    2015: {{ page_data['name_data']['G']['2015']['counted'] }} ({{ page_data['name_data']['G']['2015']['pos'] }}th)<br>
     <br><br>
 {% endif %}
 
