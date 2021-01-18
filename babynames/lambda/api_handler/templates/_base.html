@@ -98,8 +98,8 @@
         <a href="/random/x">Random</a>
         <div class="search-container">
           <form action="/">
-            <input type="text" placeholder="Name.." name="search">
-            <button type="submit" type="button" onclick='javascript: window.open(document.getElementById("search").value + "/x");'><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Name.." name="navbar_search">
+            <button type="submit" type="button"><i class="fa fa-search"></i></button>
           </form>
         </div>
     </div>
@@ -108,4 +108,12 @@
         {% endblock %}
     </div>
 </body>
+<script>
+    function search_navigate() {
+    var obj = document.getElementById("navbar_search");
+    var keyword = obj.value;
+        var dst = "/" + keyword + "/x";
+            window.location = dst;
+            }
+</script>
 </html>
