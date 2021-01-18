@@ -1,6 +1,6 @@
 {% extends '_base.html' %}
 
-{% block title%}Names{% endblock %}
+{% block title%}Scottish Baby Names - Names{% endblock %}
 
 {% block content %}
 
@@ -9,14 +9,19 @@
     {{ page_data['name_data']['B']['name'] }}<br>
     {% if '2019' in page_data['name_data']['B'] %}
     2019: {{ page_data['name_data']['B']['2019']['counted'] }} ({{ page_data['name_data']['B']['2019']['pos'] }}th)<br>
+    {% endif %}
     {% if '2018' in page_data['name_data']['B'] %}
     2018: {{ page_data['name_data']['B']['2018']['counted'] }} ({{ page_data['name_data']['B']['2018']['pos'] }}th)<br>
+    {% endif %}
     {% if '2017' in page_data['name_data']['B'] %}
     2017: {{ page_data['name_data']['B']['2017']['counted'] }} ({{ page_data['name_data']['B']['2017']['pos'] }}th)<br>
+    {% endif %}
     {% if '2016' in page_data['name_data']['B'] %}
     2016: {{ page_data['name_data']['B']['2016']['counted'] }} ({{ page_data['name_data']['B']['2016']['pos'] }}th)<br>
+    {% endif %}
     {% if '2015' in page_data['name_data']['B'] %}
     2015: {{ page_data['name_data']['B']['2015']['counted'] }} ({{ page_data['name_data']['B']['2015']['pos'] }}th)<br>
+    {% endif %}
     <br><br>
 {% endif %}
 {% if 'G' in page_data['name_data'] %}
@@ -24,14 +29,19 @@
     {{ page_data['name_data']['G']['name'] }}<br>
     {% if '2019' in page_data['name_data']['G'] %}
     2019: {{ page_data['name_data']['G']['2019']['counted'] }} ({{ page_data['name_data']['G']['2019']['pos'] }}th)<br>
+    {% endif %}
     {% if '2018' in page_data['name_data']['G'] %}
     2018: {{ page_data['name_data']['G']['2018']['counted'] }} ({{ page_data['name_data']['G']['2018']['pos'] }}th)<br>
+    {% endif %}
     {% if '2017' in page_data['name_data']['G'] %}
     2017: {{ page_data['name_data']['G']['2017']['counted'] }} ({{ page_data['name_data']['G']['2017']['pos'] }}th)<br>
+    {% endif %}
     {% if '2016' in page_data['name_data']['G'] %}
     2016: {{ page_data['name_data']['G']['2016']['counted'] }} ({{ page_data['name_data']['G']['2016']['pos'] }}th)<br>
+    {% endif %}
     {% if '2015' in page_data['name_data']['G'] %}
     2015: {{ page_data['name_data']['G']['2015']['counted'] }} ({{ page_data['name_data']['G']['2015']['pos'] }}th)<br>
+    {% endif %}
     <br><br>
 {% endif %}
 
