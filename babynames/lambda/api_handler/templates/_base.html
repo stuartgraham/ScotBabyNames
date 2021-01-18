@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-4ZPLezkTZTsojWFhpdFembdzFudphhoOzIunR1wH6g1WQDzCAiPvDyitaK67mp0+" crossorigin="anonymous">
     <script>
         function search_navigate() {
         var obj = document.getElementById("navbar_search");
@@ -106,10 +105,10 @@
         <a href="/random/b">Boys</a>
         <a href="/random/x">Random</a>
         <div class="search-container">
-          <span id="navbar_form">
+          <form id="navbar_form">
             <input type="text" placeholder="Name.." id="navbar_search">
             <button type="submit" id="navbar_sumbit" type="button" onClick="search_navigate()"><i class="fa fa-search"></i></button>
-          </span>
+          </form>
         </div>
     </div>
     <div class="div-main">
