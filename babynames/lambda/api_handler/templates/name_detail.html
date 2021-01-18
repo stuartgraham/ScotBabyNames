@@ -5,7 +5,7 @@
 {% block content %}
 
 {% if 'B' in page_data['name_data'] %}
-    <h3>{{ page_data['name_data']['B']['name'] }} (Boy)</h3><br>
+    <h3>{{ page_data['name_data']['B']['name'] }} (Boy)</h3>
     {% if '2019' in page_data['name_data']['B'] %}
     2019: {{ page_data['name_data']['B']['2019']['counted'] }} ({{ page_data['name_data']['B']['2019']['pos'] }}th)<br>
     {% endif %}
@@ -19,12 +19,11 @@
     2016: {{ page_data['name_data']['B']['2016']['counted'] }} ({{ page_data['name_data']['B']['2016']['pos'] }}th)<br>
     {% endif %}
     {% if '2015' in page_data['name_data']['B'] %}
-    2015: {{ page_data['name_data']['B']['2015']['counted'] }} ({{ page_data['name_data']['B']['2015']['pos'] }}th)<br>
+    2015: {{ page_data['name_data']['B']['2015']['counted'] }} ({{ page_data['name_data']['B']['2015']['pos'] }}th)<br>    
     {% endif %}
     <br><br>
-{% endif %}
-{% if 'G' in page_data['name_data'] %}
-    <h3>{{ page_data['name_data']['G']['name'] }} (Girl)</h3><br>
+{% elif 'G' in page_data['name_data'] %}
+    <h3>{{ page_data['name_data']['G']['name'] }} (Girl)</h3>
     {% if '2019' in page_data['name_data']['G'] %}
     2019: {{ page_data['name_data']['G']['2019']['counted'] }} ({{ page_data['name_data']['G']['2019']['pos'] }}th)<br>
     {% endif %}
@@ -41,6 +40,8 @@
     2015: {{ page_data['name_data']['G']['2015']['counted'] }} ({{ page_data['name_data']['G']['2015']['pos'] }}th)<br>
     {% endif %}
     <br><br>
+{% else %}
+<h3>Name not found</h3>
 {% endif %}
 
 {% endblock %}
